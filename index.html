@@ -1,38 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166905993-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166905993-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-  gtag('config', 'UA-166905993-1');
-</script>
-<script>
-    // Create BP element on the window
-    window["bp"] = window["bp"] || function () {
-	(window["bp"].q = window["bp"].q || []).push(arguments);
-    };
-    window["bp"].l = 1 * new Date();
+	  gtag('config', 'UA-166905993-1');
+	</script>
 
-    // Insert a script tag on the top of the head to load bp.js
-    scriptElement = document.createElement("script");
-    firstScript = document.getElementsByTagName("script")[0];
-    scriptElement.async = true;
-    scriptElement.src = 'https://pixel.barion.com/bp.js';
-    firstScript.parentNode.insertBefore(scriptElement, firstScript);
-
-    // Send init event
-    bp('init', 'addBarionPixelId', 'BP-uKDQTu7Gkc-6A');
-</script>
-
-<noscript>
-    <img height="1" width="1" style="display:none" alt="Barion Pixel" src="https://pixel.barion.com/a.gif?ba_pixel_id='BP-uKDQTu7Gkc-6A'&ev=contentView&noscript=1">
-</noscript>
-
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
@@ -599,10 +578,114 @@
                                         <div class="media-body">Érintkezés nélkül.</div>
                                     </li>
                                 </ul>
-                                <p class="price">Ár <span>2000 ft</span></p>
+                                <p class="price">Ár <span>2500 ft</span></p>
                             </div>
                             <div class="button-container">
-                                <a class="btn-solid-reg page-scroll" href="#callMe">Tovább</a>
+                                <div id='product-component-1589717327376'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'mitomagia.myshopify.com',
+      storefrontAccessToken: 'e9fc724e882b137be5f89b495c803bdf',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '5059131015305',
+        node: document.getElementById('product-component-1589717327376'),
+        moneyFormat: '%7B%7Bamount_no_decimals_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "border-radius": "10px"
+      }
+    },
+    "buttonDestination": "checkout",
+    "contents": {
+      "img": false,
+      "title": false,
+      "price": false
+    },
+    "text": {
+      "button": "Fizetés"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "border-radius": "10px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "cart": {
+    "styles": {
+      "button": {
+        "border-radius": "10px"
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
                             </div> <!-- end of button-container -->
                         </div>
                         <!-- end of card -->
