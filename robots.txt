@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /index.html
 Disallow: /asset/
 Disallow: CNAME
 Disallow: *.code-workspace
